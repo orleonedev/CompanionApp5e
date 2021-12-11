@@ -33,6 +33,6 @@ struct CharacterRow: View {
 
 struct CharacterRow_Previews: PreviewProvider {
     static var previews: some View {
-        CharacterRow(chara: CharStore().charList[0])
+        CharacterRow(chara: characterListData[0])
     }
 }

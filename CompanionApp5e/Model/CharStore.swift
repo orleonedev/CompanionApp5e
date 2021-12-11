@@ -10,35 +10,11 @@ import SwiftUI
 
 class CharStore: ObservableObject {
     
-    @Published var charList: [Character] = [Character(charName: "Beledros",
-                                                      charClass: "Paladin",
-                                                      charRace: "Dragonborn",
-                                                      charLevel: 1,
-                                                      charClassArmor: 25,
-                                                      charHitPoints: 18,
-                                                      charInitiative: 3,
-                                                      charSTR: 18,
-                                                      charDEX: 12,
-                                                      charCON: 13,
-                                                      charINT: 10,
-                                                      charWIS: 10,
-                                                      charCHA: 18)]
+    @Published var charList: [Character]
     
-//    init() {
-//        self.charList = [Character(charName: "Beledros",
-//                                   charClass: "Paladin",
-//                                   charRace: "Dragonborn",
-//                                   charLevel: 1,
-//                                   charClassArmor: 25,
-//                                   charHitPoints: 18,
-//                                   charInitiative: 3,
-//                                   charSTR: 18,
-//                                   charDEX: 12,
-//                                   charCON: 13,
-//                                   charINT: 10,
-//                                   charWIS: 10,
-//                                   charCHA: 18)]
-//    }
+    init(list: [Character]){
+        self.charList = list
+    }
     
     func addCharToList(character: Character){
         self.charList.insert(character, at: 0)

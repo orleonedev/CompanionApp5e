@@ -99,6 +99,9 @@ struct RootView: View {
 
 struct RootView_Previews: PreviewProvider {
     static var previews: some View {
-        RootView().environmentObject(CharStore())
+        Group {
+            RootView().environmentObject(CharStore(list: characterListData))
+            RootView().preferredColorScheme(.dark).environmentObject(CharStore(list: characterListData))
+        }
     }
 }
