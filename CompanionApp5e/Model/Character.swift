@@ -18,6 +18,10 @@ struct Character: Identifiable {
     var charClassArmor: Int
     var charHitPoints: Int
     var charInitiative: Int
+    var charPP: Int
+    var charSpeed: Int
+    var charHPDice: Int
+    var charProf: Int
     var charSTR: Int
     var charDEX: Int
     var charCON: Int

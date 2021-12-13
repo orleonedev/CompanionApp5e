@@ -20,6 +20,10 @@
 		512BEBA62763B5C600698A06 /* Compendium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512BEBA52763B5C600698A06 /* Compendium.swift */; };
 		512BEBA82763B5D400698A06 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512BEBA72763B5D400698A06 /* Items.swift */; };
 		512BEBAA2763C5EA00698A06 /* CharacterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512BEBA92763C5EA00698A06 /* CharacterRow.swift */; };
+		51CBA68C2767421B00CA4D57 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBA68B2767421B00CA4D57 /* CharacterDetailView.swift */; };
+		51CBA68F276744AA00CA4D57 /* CharDetHeadLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBA68E276744AA00CA4D57 /* CharDetHeadLineView.swift */; };
+		51CBA691276748B800CA4D57 /* CharDetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBA690276748B800CA4D57 /* CharDetRow.swift */; };
+		51CBA69327676E3000CA4D57 /* AddCharModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBA69227676E3000CA4D57 /* AddCharModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,10 @@
 		512BEBA52763B5C600698A06 /* Compendium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compendium.swift; sourceTree = "<group>"; };
 		512BEBA72763B5D400698A06 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		512BEBA92763C5EA00698A06 /* CharacterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRow.swift; sourceTree = "<group>"; };
+		51CBA68B2767421B00CA4D57 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		51CBA68E276744AA00CA4D57 /* CharDetHeadLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharDetHeadLineView.swift; sourceTree = "<group>"; };
+		51CBA690276748B800CA4D57 /* CharDetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharDetRow.swift; sourceTree = "<group>"; };
+		51CBA69227676E3000CA4D57 /* AddCharModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCharModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +111,12 @@
 		512BEB992763A43F00698A06 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				51CBA68D2767448200CA4D57 /* Utilities */,
 				512BEB9B2763AB3800698A06 /* CharactersView.swift */,
 				512BEB9D2763AB4800698A06 /* EncountersView.swift */,
 				512BEB9F2763AB5700698A06 /* CompendiumView.swift */,
-				512BEBA92763C5EA00698A06 /* CharacterRow.swift */,
+				51CBA68B2767421B00CA4D57 /* CharacterDetailView.swift */,
+				51CBA69227676E3000CA4D57 /* AddCharModalView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,6 +126,16 @@
 			children = (
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		51CBA68D2767448200CA4D57 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				512BEBA92763C5EA00698A06 /* CharacterRow.swift */,
+				51CBA68E276744AA00CA4D57 /* CharDetHeadLineView.swift */,
+				51CBA690276748B800CA4D57 /* CharDetRow.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,13 +211,17 @@
 				512BEBAA2763C5EA00698A06 /* CharacterRow.swift in Sources */,
 				512BEB9E2763AB4800698A06 /* EncountersView.swift in Sources */,
 				512BEBA82763B5D400698A06 /* Items.swift in Sources */,
+				51CBA68C2767421B00CA4D57 /* CharacterDetailView.swift in Sources */,
+				51CBA691276748B800CA4D57 /* CharDetRow.swift in Sources */,
 				512BEB8D2763A41400698A06 /* RootView.swift in Sources */,
+				51CBA68F276744AA00CA4D57 /* CharDetHeadLineView.swift in Sources */,
 				512BEB8B2763A41400698A06 /* CompanionApp5eApp.swift in Sources */,
 				512BEBA22763AC1500698A06 /* Character.swift in Sources */,
 				512BEBA62763B5C600698A06 /* Compendium.swift in Sources */,
 				512BEB9C2763AB3800698A06 /* CharactersView.swift in Sources */,
 				511C995627650C2F009190E9 /* DataTest.swift in Sources */,
 				512BEBA02763AB5700698A06 /* CompendiumView.swift in Sources */,
+				51CBA69327676E3000CA4D57 /* AddCharModalView.swift in Sources */,
 				512BEBA42763B13800698A06 /* CharStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,15 +12,25 @@ struct CharactersView: View {
     
     var body: some View {
         
-        List{
-            ForEach(charStore.charList){char in
-                CharacterRow(chara: char)
-                CharacterRow(chara: char)
-                CharacterRow(chara: char)
+        if charStore.charList.isEmpty
+        {
+            VStack(alignment: .center, spacing: 12){
+                Image(systemName: "star")
+                    .font(.system(size: 69))
+                Text("Nothing to see here...")
+                    .font(.title)
             }
+            .foregroundColor(.secondary)
+        }else{
+            List{
+                ForEach(charStore.charList){char in
+                    NavigationLink(destination: CharacterDetailView(chara: char)){
+                        CharacterRow(chara: char)
+                    }
+                }
+            }
+            .listStyle(.insetGrouped)
         }
-        .listStyle(.insetGrouped)
-        
     }
 }
 
@@ -28,5 +38,8 @@ struct CharactersView_Previews: PreviewProvider {
     static var previews: some View {
         CharactersView().environmentObject(CharStore(
             list: characterListData))
+        CharactersView().environmentObject(CharStore(
+            list: characterListData))
+            .preferredColorScheme(.dark)
     }
 }

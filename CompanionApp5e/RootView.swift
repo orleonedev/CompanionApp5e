@@ -11,7 +11,7 @@ import SwiftUI
 
 struct RootView: View {
     @EnvironmentObject var charStore: CharStore
-    
+    @State var addCharModalShowing: Bool = false
     var body: some View {
         
         TabView{
@@ -23,7 +23,9 @@ struct RootView: View {
                 .navigationTitle("Characters")
                 .toolbar{
                     ToolbarItem(placement: .navigationBarTrailing){
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                        Button(action: {
+                            addCharModalShowing.toggle()
+                        }) {
                             Image(systemName: "plus")
                         }
                         
@@ -93,6 +95,11 @@ struct RootView: View {
                 .tag(3)
             
         }
+        .sheet(isPresented: $addCharModalShowing, content: {
+            AddCharModalView(addCharModalShowing: $addCharModalShowing)
+        })
+            
+        
         
     }
 }
