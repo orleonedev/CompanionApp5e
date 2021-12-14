@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		511C995627650C2F009190E9 /* DataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511C995527650C2F009190E9 /* DataTest.swift */; };
+		512624952768963F00AD65C0 /* AddCharModalRowString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512624942768963F00AD65C0 /* AddCharModalRowString.swift */; };
+		512624972768BB8600AD65C0 /* AddCharModalRowInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512624962768BB8600AD65C0 /* AddCharModalRowInt.swift */; };
 		512BEB8B2763A41400698A06 /* CompanionApp5eApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512BEB8A2763A41400698A06 /* CompanionApp5eApp.swift */; };
 		512BEB8D2763A41400698A06 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512BEB8C2763A41400698A06 /* RootView.swift */; };
 		512BEB8F2763A41500698A06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512BEB8E2763A41500698A06 /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		511C995527650C2F009190E9 /* DataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTest.swift; sourceTree = "<group>"; };
+		512624942768963F00AD65C0 /* AddCharModalRowString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCharModalRowString.swift; sourceTree = "<group>"; };
+		512624962768BB8600AD65C0 /* AddCharModalRowInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCharModalRowInt.swift; sourceTree = "<group>"; };
 		512BEB872763A41400698A06 /* CompanionApp5e.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompanionApp5e.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		512BEB8A2763A41400698A06 /* CompanionApp5eApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionApp5eApp.swift; sourceTree = "<group>"; };
 		512BEB8C2763A41400698A06 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 				512BEBA92763C5EA00698A06 /* CharacterRow.swift */,
 				51CBA68E276744AA00CA4D57 /* CharDetHeadLineView.swift */,
 				51CBA690276748B800CA4D57 /* CharDetRow.swift */,
+				512624942768963F00AD65C0 /* AddCharModalRowString.swift */,
+				512624962768BB8600AD65C0 /* AddCharModalRowInt.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -214,12 +220,14 @@
 				51CBA68C2767421B00CA4D57 /* CharacterDetailView.swift in Sources */,
 				51CBA691276748B800CA4D57 /* CharDetRow.swift in Sources */,
 				512BEB8D2763A41400698A06 /* RootView.swift in Sources */,
+				512624972768BB8600AD65C0 /* AddCharModalRowInt.swift in Sources */,
 				51CBA68F276744AA00CA4D57 /* CharDetHeadLineView.swift in Sources */,
 				512BEB8B2763A41400698A06 /* CompanionApp5eApp.swift in Sources */,
 				512BEBA22763AC1500698A06 /* Character.swift in Sources */,
 				512BEBA62763B5C600698A06 /* Compendium.swift in Sources */,
 				512BEB9C2763AB3800698A06 /* CharactersView.swift in Sources */,
 				511C995627650C2F009190E9 /* DataTest.swift in Sources */,
+				512624952768963F00AD65C0 /* AddCharModalRowString.swift in Sources */,
 				512BEBA02763AB5700698A06 /* CompendiumView.swift in Sources */,
 				51CBA69327676E3000CA4D57 /* AddCharModalView.swift in Sources */,
 				512BEBA42763B13800698A06 /* CharStore.swift in Sources */,
