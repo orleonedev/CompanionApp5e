@@ -16,20 +16,20 @@ struct AddCharModalView: View {
     @State var inputRace: String = ""
     @State var inputClass: String = ""
     @State var inputLevel: Int? = nil
-    @State var inputHP: String = ""
-    @State var inputCA: String = ""
-    @State var inputSP: String = ""
-    @State var inputDice: String = ""
-    @State var inputPP: String = ""
-    @State var inputPB: String = ""
-    @State var inputInit: String = ""
+    @State var inputHP: Int? = nil
+    @State var inputCA: Int? = nil
+    @State var inputSP: Int? = nil
+    @State var inputDice: Int? = nil
+    @State var inputPP: Int? = nil
+    @State var inputPB: Int? = nil
+    @State var inputInit: Int? = nil
     
-    @State var inputSTR: String = ""
-    @State var inputDEX: String = ""
-    @State var inputCON: String = ""
-    @State var inputINT: String = ""
-    @State var inputWIS: String = ""
-    @State var inputCHA: String = ""
+    @State var inputSTR: Int? = nil
+    @State var inputDEX: Int? = nil
+    @State var inputCON: Int? = nil
+    @State var inputINT: Int? = nil
+    @State var inputWIS: Int? = nil
+    @State var inputCHA: Int? = nil
     
     var body: some View {
         NavigationView{
@@ -41,38 +41,32 @@ struct AddCharModalView: View {
                     AddCharModalRowInt(label: "Level", value: $inputLevel)
                 }
                 Section(header: Text("Base Stats")){
-                    TextField("Hit Points", text: $inputHP)
-                    TextField("Hit Dice", text: $inputClass)
-                    TextField("Class Armor", text: $inputCA)
-                    TextField("Speed", text: $inputSP)
-                    TextField("Passive Perception", text: $inputPP)
-                    TextField("Proficiency Bonus", text: $inputPB)
-                    TextField("Initiative", text: $inputInit)
+                    AddCharModalRowInt(label: "Hit Points", value: $inputHP)
+                    AddCharModalRowInt(label: "Hit Dice", value: $inputDice)
+                    AddCharModalRowInt(label: "Class Armor", value: $inputCA)
+                    AddCharModalRowInt(label: "Speed", value: $inputSP)
+                    AddCharModalRowInt(label: "Passive Perception", value: $inputPP)
+                    AddCharModalRowInt(label: "Proficiency Bonus", value: $inputPB)
+                    AddCharModalRowInt(label: "Initiative", value: $inputInit)
                 }
                 Section(header: Text("Ability Scores")){
-                    
-                    TextField("Strength", value: $inputSTR ,formatter: NumberFormatter(), prompt: Text("Strength"))
-                        .keyboardType(.numberPad)
-                    TextField("Dexterity", value: $inputDEX ,formatter: NumberFormatter(), prompt: Text("Dexterity"))
-                        .keyboardType(.numberPad)
-                    TextField("Constitution", value: $inputCON ,formatter: NumberFormatter(), prompt: Text("Constitution"))
-                        .keyboardType(.numberPad)
-                    TextField("Intelligence", value: $inputINT ,formatter: NumberFormatter(), prompt: Text("Intelligence"))
-                        .keyboardType(.numberPad)
-                    TextField("Wisdom", value: $inputWIS ,formatter: NumberFormatter(), prompt: Text("Wisdom"))
-                        .keyboardType(.numberPad)
-                    TextField("Charisma", value: $inputCHA ,formatter: NumberFormatter(), prompt: Text("Charisma"))
-                        .keyboardType(.numberPad)
-                    
+                    AddCharModalRowInt(label: "Strength", value: $inputSTR)
+                    AddCharModalRowInt(label: "Dexterity", value: $inputDEX)
+                    AddCharModalRowInt(label: "Constitution", value: $inputCON)
+                    AddCharModalRowInt(label: "Intelligence", value: $inputINT)
+                    AddCharModalRowInt(label: "Wisdom", value: $inputWIS)
+                    AddCharModalRowInt(label: "Charisma", value: $inputCHA)
                 }
                 
             }
             .listStyle(.grouped)
-                .navigationTitle("Add Character")
+            .navigationTitle(inputName == "" ? "Add Character" : inputName)
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar{
                     ToolbarItem(placement: .navigationBarTrailing){
                         Button("Save"){
+                            var tempChar = Character(charName: inputName, charClass: inputClass, charRace: inputRace, charLevel: inputLevel ?? 0, charClassArmor: inputCA ?? 0, charHitPoints: inputHP ?? 0, charInitiative: inputInit ?? 0 , charPP: inputPP ?? 10, charSpeed: inputSP ?? 0, charHPDice: inputDice ?? 0, charProf: inputPB ?? 2, charSTR: inputSTR ?? 10, charDEX: inputDEX ?? 10, charCON: inputCON ?? 10, charINT: inputINT ?? 10, charWIS: inputWIS ?? 10, charCHA: inputCHA ?? 10)
+                            charStore.addCharToList(character: tempChar)
                             addCharModalShowing.toggle()
                         }
                         
