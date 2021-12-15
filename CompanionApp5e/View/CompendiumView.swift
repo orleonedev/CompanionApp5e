@@ -9,7 +9,14 @@ import SwiftUI
 
 struct CompendiumView: View {
     var body: some View {
-        Text("Compendium View")
+        List{
+            ForEach(compCategories, id: \.self){ item in
+                NavigationLink(destination: {} ){
+                    CompendiumItemRow(label: item, sysNameIcon: "books.vertical.circle")
+                }
+            }
+        }
+        .listStyle(.insetGrouped)
     }
 }
 

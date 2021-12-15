@@ -10,20 +10,24 @@ import SwiftUI
 struct EncountersView: View {
     var body: some View {
         
-            
-            List(0..<15) { i in
-                
-               HStack {
-                   Image("EncountersIcon")
-                       .foregroundColor(.secondary)
-                       .scaleEffect(x: 1.5, y: 1.5, anchor: .center)
-                       .padding()
-                   Text("Encounter \(i)")
-                   
-               }
+        
+        List(0..<15) { i in
+            NavigationLink(destination: {} ){
+                HStack {
+                    Image("EncountersIcon")
+                        .resizable()
+                        .foregroundColor(.secondary)
+                        .scaledToFill()
+                        .padding(8)
+                        .frame(width: 48, height: 48, alignment: .center)
+                    Text("Encounter \(i)")
+                        .font(.title2)
+                    
+                }
             }
-            .listStyle(.insetGrouped)
-}
+        }
+        .listStyle(.insetGrouped)
+    }
 }
 
 struct EncountersView_Previews: PreviewProvider {

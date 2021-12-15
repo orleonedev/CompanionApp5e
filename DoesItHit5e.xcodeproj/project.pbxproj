@@ -22,6 +22,7 @@
 		512BEBA62763B5C600698A06 /* Compendium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512BEBA52763B5C600698A06 /* Compendium.swift */; };
 		512BEBA82763B5D400698A06 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512BEBA72763B5D400698A06 /* Items.swift */; };
 		512BEBAA2763C5EA00698A06 /* CharacterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512BEBA92763C5EA00698A06 /* CharacterRow.swift */; };
+		512D0400276A741900532A4F /* CompendiumItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512D03FF276A741900532A4F /* CompendiumItemRow.swift */; };
 		51CBA68C2767421B00CA4D57 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBA68B2767421B00CA4D57 /* CharacterDetailView.swift */; };
 		51CBA68F276744AA00CA4D57 /* CharDetHeadLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBA68E276744AA00CA4D57 /* CharDetHeadLineView.swift */; };
 		51CBA691276748B800CA4D57 /* CharDetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBA690276748B800CA4D57 /* CharDetRow.swift */; };
@@ -32,7 +33,7 @@
 		511C995527650C2F009190E9 /* DataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTest.swift; sourceTree = "<group>"; };
 		512624942768963F00AD65C0 /* AddCharModalRowString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCharModalRowString.swift; sourceTree = "<group>"; };
 		512624962768BB8600AD65C0 /* AddCharModalRowInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCharModalRowInt.swift; sourceTree = "<group>"; };
-		512BEB872763A41400698A06 /* CompanionApp5e.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompanionApp5e.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		512BEB872763A41400698A06 /* DoesItHit5e.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoesItHit5e.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		512BEB8A2763A41400698A06 /* CompanionApp5eApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionApp5eApp.swift; sourceTree = "<group>"; };
 		512BEB8C2763A41400698A06 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		512BEB8E2763A41500698A06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +46,7 @@
 		512BEBA52763B5C600698A06 /* Compendium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compendium.swift; sourceTree = "<group>"; };
 		512BEBA72763B5D400698A06 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		512BEBA92763C5EA00698A06 /* CharacterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRow.swift; sourceTree = "<group>"; };
+		512D03FF276A741900532A4F /* CompendiumItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompendiumItemRow.swift; sourceTree = "<group>"; };
 		51CBA68B2767421B00CA4D57 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		51CBA68E276744AA00CA4D57 /* CharDetHeadLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharDetHeadLineView.swift; sourceTree = "<group>"; };
 		51CBA690276748B800CA4D57 /* CharDetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharDetRow.swift; sourceTree = "<group>"; };
@@ -73,7 +75,7 @@
 		512BEB882763A41400698A06 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				512BEB872763A41400698A06 /* CompanionApp5e.app */,
+				512BEB872763A41400698A06 /* DoesItHit5e.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +142,7 @@
 				51CBA690276748B800CA4D57 /* CharDetRow.swift */,
 				512624942768963F00AD65C0 /* AddCharModalRowString.swift */,
 				512624962768BB8600AD65C0 /* AddCharModalRowInt.swift */,
+				512D03FF276A741900532A4F /* CompendiumItemRow.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -147,9 +150,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		512BEB862763A41400698A06 /* CompanionApp5e */ = {
+		512BEB862763A41400698A06 /* DoesItHit5e */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 512BEB952763A41500698A06 /* Build configuration list for PBXNativeTarget "CompanionApp5e" */;
+			buildConfigurationList = 512BEB952763A41500698A06 /* Build configuration list for PBXNativeTarget "DoesItHit5e" */;
 			buildPhases = (
 				512BEB832763A41400698A06 /* Sources */,
 				512BEB842763A41400698A06 /* Frameworks */,
@@ -159,9 +162,9 @@
 			);
 			dependencies = (
 			);
-			name = CompanionApp5e;
+			name = DoesItHit5e;
 			productName = CompanionApp5e;
-			productReference = 512BEB872763A41400698A06 /* CompanionApp5e.app */;
+			productReference = 512BEB872763A41400698A06 /* DoesItHit5e.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -179,7 +182,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 512BEB822763A41400698A06 /* Build configuration list for PBXProject "CompanionApp5e" */;
+			buildConfigurationList = 512BEB822763A41400698A06 /* Build configuration list for PBXProject "DoesItHit5e" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -192,7 +195,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				512BEB862763A41400698A06 /* CompanionApp5e */,
+				512BEB862763A41400698A06 /* DoesItHit5e */,
 			);
 		};
 /* End PBXProject section */
@@ -218,6 +221,7 @@
 				512BEB9E2763AB4800698A06 /* EncountersView.swift in Sources */,
 				512BEBA82763B5D400698A06 /* Items.swift in Sources */,
 				51CBA68C2767421B00CA4D57 /* CharacterDetailView.swift in Sources */,
+				512D0400276A741900532A4F /* CompendiumItemRow.swift in Sources */,
 				51CBA691276748B800CA4D57 /* CharDetRow.swift in Sources */,
 				512BEB8D2763A41400698A06 /* RootView.swift in Sources */,
 				512624972768BB8600AD65C0 /* AddCharModalRowInt.swift in Sources */,
@@ -375,8 +379,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = AlphaDraconis.CompanionApp5e;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = AlphaDraconis.DoesItHit5e;
+				PRODUCT_NAME = DoesItHit5e;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -405,8 +409,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = AlphaDraconis.CompanionApp5e;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = AlphaDraconis.DoesItHit5e;
+				PRODUCT_NAME = DoesItHit5e;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,7 +420,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		512BEB822763A41400698A06 /* Build configuration list for PBXProject "CompanionApp5e" */ = {
+		512BEB822763A41400698A06 /* Build configuration list for PBXProject "DoesItHit5e" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				512BEB932763A41500698A06 /* Debug */,
@@ -425,7 +429,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		512BEB952763A41500698A06 /* Build configuration list for PBXNativeTarget "CompanionApp5e" */ = {
+		512BEB952763A41500698A06 /* Build configuration list for PBXNativeTarget "DoesItHit5e" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				512BEB962763A41500698A06 /* Debug */,

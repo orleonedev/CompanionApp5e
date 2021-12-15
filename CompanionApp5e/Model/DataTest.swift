@@ -98,3 +98,6 @@ var characterListData: [Character] = [
               charWIS: 18,
               charCHA: 18)
 ]
+
+
+var compCategories: [String] = ["Monsters", "Spells", "Races", "Classes", "Items"]
