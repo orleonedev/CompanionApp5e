@@ -1,6 +1,6 @@
 //
 //  CharDetRow.swift
-//  CompanionApp5e
+//  DoesItHit5e
 //
 //  Created by Oreste Leone on 13/12/21.
 //
