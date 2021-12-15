@@ -11,10 +11,13 @@ struct EncountersView: View {
     var body: some View {
         
             
-            List(0..<20) { i in
+            List(0..<15) { i in
                 
                HStack {
-                   Image(systemName: "pencil.slash")
+                   Image("EncountersIcon")
+                       .foregroundColor(.secondary)
+                       .scaleEffect(x: 1.5, y: 1.5, anchor: .center)
+                       .padding()
                    Text("Encounter \(i)")
                    
                }

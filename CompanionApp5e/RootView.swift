@@ -63,7 +63,7 @@ struct RootView: View {
                  }
             }
                 .tabItem({
-                    Image(systemName: "pencil.slash")
+                    Image("EncountersIcon")
                     Text("Encounters")
                 })
                 .tag(2)
