@@ -10,7 +10,7 @@
 		511C995627650C2F009190E9 /* DataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511C995527650C2F009190E9 /* DataTest.swift */; };
 		512624952768963F00AD65C0 /* AddCharModalRowString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512624942768963F00AD65C0 /* AddCharModalRowString.swift */; };
 		512624972768BB8600AD65C0 /* AddCharModalRowInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512624962768BB8600AD65C0 /* AddCharModalRowInt.swift */; };
-		512BEB8B2763A41400698A06 /* CompanionApp5eApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512BEB8A2763A41400698A06 /* CompanionApp5eApp.swift */; };
+		512BEB8B2763A41400698A06 /* DoesItHit5eApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512BEB8A2763A41400698A06 /* DoesItHit5eApp.swift */; };
 		512BEB8D2763A41400698A06 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512BEB8C2763A41400698A06 /* RootView.swift */; };
 		512BEB8F2763A41500698A06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512BEB8E2763A41500698A06 /* Assets.xcassets */; };
 		512BEB922763A41500698A06 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512BEB912763A41500698A06 /* Preview Assets.xcassets */; };
@@ -34,7 +34,7 @@
 		512624942768963F00AD65C0 /* AddCharModalRowString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCharModalRowString.swift; sourceTree = "<group>"; };
 		512624962768BB8600AD65C0 /* AddCharModalRowInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCharModalRowInt.swift; sourceTree = "<group>"; };
 		512BEB872763A41400698A06 /* DoesItHit5e.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoesItHit5e.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		512BEB8A2763A41400698A06 /* CompanionApp5eApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionApp5eApp.swift; sourceTree = "<group>"; };
+		512BEB8A2763A41400698A06 /* DoesItHit5eApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoesItHit5eApp.swift; sourceTree = "<group>"; };
 		512BEB8C2763A41400698A06 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		512BEB8E2763A41500698A06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		512BEB912763A41500698A06 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 		512BEB7E2763A41400698A06 = {
 			isa = PBXGroup;
 			children = (
-				512BEB892763A41400698A06 /* CompanionApp5e */,
+				512BEB892763A41400698A06 /* DoesItHit5e */,
 				512BEB882763A41400698A06 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,18 +80,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		512BEB892763A41400698A06 /* CompanionApp5e */ = {
+		512BEB892763A41400698A06 /* DoesItHit5e */ = {
 			isa = PBXGroup;
 			children = (
 				512BEB9A2763A44D00698A06 /* Controller */,
 				512BEB992763A43F00698A06 /* View */,
 				512BEB982763A42D00698A06 /* Model */,
-				512BEB8A2763A41400698A06 /* CompanionApp5eApp.swift */,
+				512BEB8A2763A41400698A06 /* DoesItHit5eApp.swift */,
 				512BEB8C2763A41400698A06 /* RootView.swift */,
 				512BEB8E2763A41500698A06 /* Assets.xcassets */,
 				512BEB902763A41500698A06 /* Preview Content */,
 			);
-			path = CompanionApp5e;
+			path = DoesItHit5e;
 			sourceTree = "<group>";
 		};
 		512BEB902763A41500698A06 /* Preview Content */ = {
@@ -226,7 +226,7 @@
 				512BEB8D2763A41400698A06 /* RootView.swift in Sources */,
 				512624972768BB8600AD65C0 /* AddCharModalRowInt.swift in Sources */,
 				51CBA68F276744AA00CA4D57 /* CharDetHeadLineView.swift in Sources */,
-				512BEB8B2763A41400698A06 /* CompanionApp5eApp.swift in Sources */,
+				512BEB8B2763A41400698A06 /* DoesItHit5eApp.swift in Sources */,
 				512BEBA22763AC1500698A06 /* Character.swift in Sources */,
 				512BEBA62763B5C600698A06 /* Compendium.swift in Sources */,
 				512BEB9C2763AB3800698A06 /* CharactersView.swift in Sources */,

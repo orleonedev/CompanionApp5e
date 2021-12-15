@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct CompanionApp5eApp: App {
+struct DoesItHit5eApp: App {
     
     @StateObject var charStore = CharStore(list: characterListData )
     @StateObject var compendium = Compendium()
