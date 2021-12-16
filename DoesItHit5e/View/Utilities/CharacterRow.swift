@@ -18,12 +18,16 @@ struct CharacterRow: View {
                 Text(chara.charName)
                     .font(.headline)
                     .lineLimit(1)
-                HStack{
+                HStack(spacing: 4){
                     Text(chara.charRace)
                         .font(.subheadline).foregroundColor(.secondary)
                     Text(chara.charClass)
                         .font(.subheadline).foregroundColor(.secondary)
+                    Text(String(chara.charLevel))
+                        .font(.subheadline).foregroundColor(.secondary)
+                    
                 }
+                .lineLimit(1)
             }
             Spacer()
             //Image(systemName: "chevron.right")
